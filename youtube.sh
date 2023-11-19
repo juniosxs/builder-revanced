@@ -1,5 +1,11 @@
 # by juniosxs
 
+# Download ReVanced Dependencies
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir /sdcard/Download
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir /sdcard/Download
+gh release download --skip-existing --repo https://github.com/ReVanced/revanced-cli -p '*.jar' --dir /sdcard/Download
+#______________________________________________
+
 # force delete resource cache
 rm -rf revanced-resource-cache
 
@@ -20,7 +26,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 -i Hide" "player" "buttons \
 -i Remove" "player" "controls" "background \
 -i SponsorBlock \
--i Disable" "Shorts" "on" "startup \
+-i Disable" "resuming" "Shorts" "on" "startup \
 -i Theme \
 -i Client" "spoof \
 -i Bypass" "URL" "redirects \
@@ -30,8 +36,9 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 -i HDR" "auto" "brightness \
 -i Remember" "video" "quality \
 -i Hide" "ads \
+-i Custom" "player" "overlay" "opacity \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*android.youtube*.apk \
 --out /sdcard/ReVanced-Youtube.apk
 
-echo "Finished"
+echo "Finished 😀"
