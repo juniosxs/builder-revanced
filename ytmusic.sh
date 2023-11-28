@@ -30,6 +30,6 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 -i Background" "play \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*youtube.music*.apk \
---out /sdcard/ReVanced-YTMusic.apk
+--out /sdcard/YTMusic-ReVanced.apk
 
 echo "Finished 😀"

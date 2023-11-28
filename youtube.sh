@@ -39,6 +39,6 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 -i Custom" "player" "overlay" "opacity \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*android.youtube*.apk \
---out /sdcard/ReVanced-Youtube.apk
+--out /sdcard/YouTube-ReVanced.apk
 
 echo "Finished 😀"
