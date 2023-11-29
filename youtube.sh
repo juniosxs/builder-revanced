@@ -18,6 +18,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 --keystore-password juniosxs \
 --patch-bundle /sdcard/Download/revanced-patches*.jar \
 --exclusive \
+--force \
 -i Hide" "ads \
 -i Video" "ads \
 -i External" "downloads \

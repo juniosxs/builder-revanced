@@ -18,6 +18,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 --keystore-password juniosxs \
 --patch-bundle /sdcard/Download/revanced-patches*.jar \
 --exclusive \
+--force \
 -i Music" "video" "ads \
 -i Codecs" "unlock \
 -i Exclusive" "audio" "playback \
