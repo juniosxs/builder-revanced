@@ -27,6 +27,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
 -i Hide" "player" "buttons \
 -i Remove" "player" "controls" "background \
 -i SponsorBlock \
+-i Hide" "Shorts" "components \
 -i Disable" "resuming" "Shorts" "on" "startup \
 -i Theme \
 -i Client" "spoof \
