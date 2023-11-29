@@ -19,6 +19,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 --patch-bundle /sdcard/Download/revanced-patches*.jar \
 --warn \
 --purge \
+--resource-cache revanced-resource-cache \
 --exclusive \
 --force \
 -i Music" "video" "ads \
