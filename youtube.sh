@@ -10,13 +10,15 @@ gh release download --skip-existing --repo https://github.com/ReVanced/revanced-
 rm -rf revanced-resource-cache
 
 echo "Building YouTube ReVanced"
-java -jar /sdcard/Download/revanced-cli*.jar patch -pw \
+java -jar /sdcard/Download/revanced-cli*.jar patch \
 --custom-aapt2-binary custom/aapt2_64 \
 --keystore custom/juniosxs.bks \
 --alias juniosxs \
 --keystore-entry-password juniosxs \
 --keystore-password juniosxs \
 --patch-bundle /sdcard/Download/revanced-patches*.jar \
+--warn \
+--purge \
 --exclusive \
 --force \
 -i Hide" "ads \
