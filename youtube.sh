@@ -36,7 +36,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Client spoof" \
 -i "Bypass URL redirects" \
 -i "Open links externally" \
--i "Vanced MicroG support" \
+-i "GmsCore support" \
 -i "Minimized playback" \
 -i "HDR auto brightness" \
 -i "Remember video quality" \

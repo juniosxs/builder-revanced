@@ -30,7 +30,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Hide get premium" \
 -i "Remove upgrade button" \
 -i "Bypass certificate checks" \
--i "Vanced MicroG support" \
+-i "GmsCore support" \
 -i "Background play" \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*youtube.music*.apk \
