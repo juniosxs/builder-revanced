@@ -22,26 +22,26 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 --resource-cache revanced-resource-cache \
 --exclusive \
 --force \
--i Hide" "ads \
--i Video" "ads \
--i External" "downloads \
--i Premium" "heading \
--i Hide" "cast" "button \
--i Hide" "player" "buttons \
--i Remove" "player" "controls" "background \
--i SponsorBlock \
--i Hide" "Shorts" "components \
--i Disable" "resuming" "Shorts" "on" "startup \
--i Theme \
--i Client" "spoof \
--i Bypass" "URL" "redirects \
--i Open" "links" "externally \
--i Vanced" "MicroG" "support \
--i Minimized" "playback \
--i HDR" "auto" "brightness \
--i Remember" "video" "quality \
--i Hide" "ads \
--i Custom" "player" "overlay" "opacity \
+-i "Hide ads" \
+-i "Video ads" \
+-i "External downloads" \
+-i "Premium heading" \
+-i "Hide cast button" \
+-i "Hide player buttons" \
+-i "Remove player controls background" \
+-i "SponsorBlock" \
+-i "Hide Shorts components" \
+-i "Disable resuming Shorts on startup" \
+-i "Theme" \
+-i "Client spoof" \
+-i "Bypass URL redirects" \
+-i "Open links externally" \
+-i "Vanced MicroG support" \
+-i "Minimized playback" \
+-i "HDR auto brightness" \
+-i "Remember video quality" \
+-i "Hide ads" \
+-i "Custom player overlay opacity" \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*android.youtube*.apk \
 --out /sdcard/YouTube-ReVanced.apk
