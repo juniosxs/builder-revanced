@@ -3,7 +3,7 @@
 # Download ReVanced Dependencies
 gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir /sdcard/Download
 gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir /sdcard/Download
-gh release download --skip-existing --repo https://github.com/ReVanced/revanced-cli -p '*.jar' --dir /sdcard/Download
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-cli -p '*.jar' --dir /sdcard/Download
 #______________________________________________
 
 # force delete resource cache
