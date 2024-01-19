@@ -25,12 +25,14 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Hide ads" \
 -i "Video ads" \
 -i "External downloads" \
+-i "Swipe controls" \
 -i "Change header" \
 -i "Hide cast button" \
 -i "Hide player buttons" \
 -i "Remove player controls background" \
 -i "SponsorBlock" \
 -i "Hide Shorts components" \
+-i "Player flyout menu" \
 -i "Disable resuming Shorts on startup" \
 -i "Theme" \
 -i "Client spoof" \
@@ -42,6 +44,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Remember video quality" \
 -i "Hide ads" \
 -i "Custom player overlay opacity" \
+-i "Change start page" \
 --merge /sdcard/Download/revanced-integrations-*.apk \
 /sdcard/Download/*android.youtube*.apk \
 --out /sdcard/YouTube-ReVanced.apk
