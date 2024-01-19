@@ -29,6 +29,8 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Minimized playback music" \
 -i "Hide get premium" \
 -i "Remove upgrade button" \
+-i "Permanent shuffle" \
+-i "Permanent repeat" \
 -i "Bypass certificate checks" \
 -i "GmsCore support" \
 -i "Background play" \
