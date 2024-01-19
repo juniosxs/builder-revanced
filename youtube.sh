@@ -25,7 +25,7 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Hide ads" \
 -i "Video ads" \
 -i "External downloads" \
--i "Premium heading" \
+-i "Change header" \
 -i "Hide cast button" \
 -i "Hide player buttons" \
 -i "Remove player controls background" \
