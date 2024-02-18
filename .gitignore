@@ -1,2 +1,3 @@
-revanced-resource-cache/*
-options.json
+*cache/*
+*.json
+revanced/*
