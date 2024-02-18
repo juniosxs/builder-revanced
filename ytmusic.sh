@@ -1,25 +1,24 @@
 # by juniosxs
 
 # Download ReVanced Dependencies
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir /sdcard/Download
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir /sdcard/Download
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-cli -p '*.jar' --dir /sdcard/Download
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir revanced/
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir revanced/
+gh release download --skip-existing --repo https://github.com/juniosxs/rev-cli -p '*.jar' --dir revanced/
 #______________________________________________
 
 # force delete resource cache
-rm -rf revanced-resource-cache
+rm -rf *cache* *.json
 
 echo "Building YT Music ReVanced"
-java -jar /sdcard/Download/revanced-cli*.jar patch \
+java -jar revanced/revanced-cli*.jar patch \
 --custom-aapt2-binary custom/aapt2_64 \
 --keystore custom/juniosxs.bks \
 --alias juniosxs \
 --keystore-entry-password juniosxs \
 --keystore-password juniosxs \
---patch-bundle /sdcard/Download/revanced-patches*.jar \
+--patch-bundle revanced/revanced-patches*.jar \
 --warn \
 --purge \
---resource-cache revanced-resource-cache \
 --exclusive \
 --force \
 -i "Music video ads" \
@@ -34,8 +33,11 @@ java -jar /sdcard/Download/revanced-cli*.jar patch \
 -i "Bypass certificate checks" \
 -i "GmsCore support" \
 -i "Background play" \
---merge /sdcard/Download/revanced-integrations-*.apk \
-/sdcard/Download/*youtube.music*.apk \
---out /sdcard/YTMusic-ReVanced.apk
+--merge revanced/revanced-integrations-*.apk \
+~/storage/downloads/*youtube.music*.apk \
+--out YTMusic-ReVanced.apk
+
+# Move Apk to Internal Storage
+mv YTMusic-ReVanced.apk ~/storage/shared/
 
 echo "Finished 😀"
