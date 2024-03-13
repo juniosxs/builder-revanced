@@ -23,7 +23,7 @@ java -jar revanced/revanced-cli*.jar patch \
 --force \
 -i "Hide ads" \
 -i "Video ads" \
--i "External downloads" \
+-i "Downloads" \
 -i "Swipe controls" \
 -i "Change header" \
 -i "Hide cast button" \
