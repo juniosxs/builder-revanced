@@ -39,7 +39,6 @@ java -jar revanced/revanced-cli*.jar patch \
 -i "Open links externally" \
 -i "GmsCore support" \
 -i "Minimized playback" \
--i "HDR auto brightness" \
 -i "Remember video quality" \
 -i "Hide ads" \
 -i "Custom player overlay opacity" \
