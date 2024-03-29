@@ -13,7 +13,7 @@ echo "Building YouTube ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
 --custom-aapt2-binary custom/aapt2_64 \
 --keystore custom/juniosxs.bks \
---alias juniosxs \
+--keystore-entry-alias juniosxs \
 --keystore-entry-password juniosxs \
 --keystore-password juniosxs \
 --patch-bundle revanced/revanced-patches*.jar \
@@ -21,32 +21,33 @@ java -jar revanced/revanced-cli*.jar patch \
 --purge \
 --exclusive \
 --force \
--i "Hide ads" \
--i "Video ads" \
--i "Downloads" \
--i "Swipe controls" \
--i "Change header" \
--i "Hide cast button" \
--i "Hide player buttons" \
--i "Remove player controls background" \
--i "SponsorBlock" \
--i "Hide Shorts components" \
--i "Player flyout menu" \
--i "Disable resuming Shorts on startup" \
--i "Theme" \
--i "Client spoof" \
--i "Bypass URL redirects" \
--i "Open links externally" \
--i "GmsCore support" \
--i "Minimized playback" \
--i "Remember video quality" \
--i "Hide ads" \
--i "Custom player overlay opacity" \
--i "Change start page" \
+-i="Announcements" \
+-i="Bypass URL redirects" \
+-i="Change start page" \
+-i="Client spoof" \
+-i="Custom player overlay opacity" \
+-i="Disable resuming Shorts on startup" \
+-i="Disable suggested video end screen" \
+-i="Downloads" \
+-i="GmsCore support" \
+-i="Hide Shorts components" \
+-i="Hide ads" \
+-i="Hide endscreen cards" \
+-i="Hide player buttons" \
+-i="Minimized playback" \
+-i="Open links externally" \
+-i="Player flyout menu" \
+-i="Remember video quality" \
+-i="SponsorBlock" \
+-i="Swipe controls" \
+-i="Theme" \
+-i="Video ads" \
+-i="Change header" \
+-i="Hide cast button" \
+-i="Remove player controls background" \
 --merge revanced/revanced-integrations-*.apk \
 ~/storage/downloads/*android.youtube*.apk \
 --out YouTube-ReVanced.apk
-
 # Move Apk to Internal Storage
 mv YouTube-ReVanced.apk ~/storage/shared/
 
