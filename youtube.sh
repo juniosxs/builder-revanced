@@ -1,12 +1,12 @@
 # by juniosxs
-
-# Download ReVanced Dependencies
+#
+echo "Download ReVanced Dependencies"
 gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir revanced/
 gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir revanced/
 gh release download --skip-existing --repo https://github.com/juniosxs/rev-cli -p '*.jar' --dir revanced/
 #______________________________________________
 
-# force delete resource cache
+echo "force delete resource cache"
 rm -rf *cache* *.json
 
 echo "Building YouTube ReVanced"
@@ -48,7 +48,8 @@ java -jar revanced/revanced-cli*.jar patch \
 --merge revanced/revanced-integrations-*.apk \
 ~/storage/downloads/*android.youtube*.apk \
 --out YouTube-ReVanced.apk
-# Move Apk to Internal Storage
+
+echo "Move Apk to Internal Storage"
 mv YouTube-ReVanced.apk ~/storage/shared/
 
 echo "Finished 😀"
