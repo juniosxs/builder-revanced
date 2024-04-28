@@ -1,13 +1,11 @@
 # by juniosxs
 #
-echo "Download ReVanced Dependencies"
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-patches -p '*.jar' -p '*.json' --dir revanced/
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-integrations -p '*.apk' --dir revanced/
-gh release download --skip-existing --repo https://github.com/juniosxs/rev-cli -p '*.jar' --dir revanced/
-#______________________________________________
 
 echo "force delete resource cache"
 rm -rf *cache* *.json
+
+echo "Updating ReVanced Dependencies"
+sh update.sh
 
 echo "Building YT Music ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
