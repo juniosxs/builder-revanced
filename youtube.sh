@@ -22,7 +22,7 @@ java -jar revanced/revanced-cli*.jar patch \
 -i="Announcements" \
 -i="Bypass URL redirects" \
 -i="Change start page" \
--i="Client spoof" \
+-i="Spoof client" \
 -i="Custom player overlay opacity" \
 -i="Disable resuming Shorts on startup" \
 -i="Disable suggested video end screen" \

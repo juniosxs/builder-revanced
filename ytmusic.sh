@@ -19,16 +19,17 @@ java -jar revanced/revanced-cli*.jar patch \
 --purge \
 --exclusive \
 --force \
--i="Bypass certificate checks" \
--i="Enable exclusive audio playback" \
 -i="GmsCore support" \
--i="Hide 'Get Music Premium' label" \
+-i="Bypass certificate checks" \
 -i="Hide music video ads" \
--i="Minimized playback" \
 -i="Remove upgrade button" \
 -i="Hide category bar" \
+-i="Hide 'Get Music Premium' label" \
+-i="Minimized playback" \
+-i="Enable exclusive audio playback" \
 -i="Permanent shuffle" \
 -i="Permanent repeat" \
+-i="Spoof Wi-Fi connection" \
 --merge revanced/revanced-integrations-*.apk \
 ~/storage/downloads/*youtube.music*.apk \
 --out YTMusic-ReVanced.apk
