@@ -25,7 +25,7 @@ java -jar revanced/revanced-cli*.jar patch \
 -i="Remove upgrade button" \
 -i="Hide category bar" \
 -i="Hide 'Get Music Premium' label" \
--i="Minimized playback" \
+-i="Remove background playback restrictions" \
 -i="Enable exclusive audio playback" \
 -i="Permanent shuffle" \
 -i="Permanent repeat" \

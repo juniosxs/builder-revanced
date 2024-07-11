@@ -32,7 +32,7 @@ java -jar revanced/revanced-cli*.jar patch \
 -i="Hide ads" \
 -i="Hide endscreen cards" \
 -i="Hide player buttons" \
--i="Minimized playback" \
+-i="Remove background playback restrictions" \
 -i="Open links externally" \
 -i="Player flyout menu" \
 -i="Remember video quality" \
