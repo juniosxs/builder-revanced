@@ -21,7 +21,7 @@ java -jar revanced/revanced-cli*.jar patch \
 --force \
 -i="GmsCore support" \
 -i="Bypass certificate checks" \
--i="Hide music video ads" \
+-i="Hide video ads" \
 -i="Remove upgrade button" \
 -i="Hide category bar" \
 -i="Hide 'Get Music Premium' label" \
