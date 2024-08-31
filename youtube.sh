@@ -21,28 +21,29 @@ java -jar revanced/revanced-cli*.jar patch \
 --force \
 -i="Announcements" \
 -i="Bypass URL redirects" \
+-i="Bypass image region restrictions" \
 -i="Change start page" \
--i="Spoof client" \
+-i="Copy video URL" \
 -i="Custom player overlay opacity" \
+-i="Disable player popup panels" \
 -i="Disable resuming Shorts on startup" \
 -i="Disable suggested video end screen" \
+-i="Disable zoom haptics" \
 -i="Downloads" \
 -i="GmsCore support" \
 -i="Hide Shorts components" \
 -i="Hide ads" \
--i="Hide endscreen cards" \
--i="Hide player buttons" \
--i="Remove background playback restrictions" \
--i="Open links externally" \
--i="Player flyout menu" \
--i="Remember video quality" \
--i="SponsorBlock" \
--i="Swipe controls" \
--i="Theme" \
--i="Video ads" \
--i="Change header" \
 -i="Hide cast button" \
+-i="Hide layout components" \
+-i="Hide player buttons" \
+-i="Open links externally" \
+-i="Remember video quality" \
+-i="Remove background playback restrictions" \
 -i="Remove player controls background" \
+-i="SponsorBlock" \
+-i="Spoof client" \
+-i="Swipe controls" \
+-i="Video ads" \
 --merge revanced/revanced-integrations-*.apk \
 ~/storage/downloads/*android.youtube*.apk \
 --out YouTube-ReVanced.apk
