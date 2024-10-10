@@ -10,10 +10,6 @@ sh update.sh
 echo "Building YT Music ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
 --custom-aapt2-binary custom/aapt/arm64-v8a/aapt2 \
---keystore custom/juniosxs.bks \
---keystore-entry-alias juniosxs \
---keystore-entry-password juniosxs \
---keystore-password juniosxs \
 --patch-bundle revanced/revanced-patches*.jar \
 --warn \
 --purge \
