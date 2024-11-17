@@ -1,4 +1,4 @@
-# by juniosxs
+#" by juniosxs
 #
 
 echo "force delete resource cache"
@@ -9,50 +9,50 @@ sh update.sh
 
 echo "Building YouTube ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
---patch-bundle revanced/revanced-patches*.jar \
---merge revanced/revanced-integrations-*.apk \
+--patches revanced/patches*.rvp \
 --custom-aapt2-binary custom/aapt/arm64-v8a/aapt2 \
 --keystore custom/revanced.keystore \
 --keystore-entry-alias revanced \
 --keystore-entry-password revanced \
 --keystore-password revanced \
---warn \
 --purge \
---exclusive \
 --force \
--i="Announcements" \
--i="Bypass URL redirects" \
--i="Bypass image region restrictions" \
--i="Copy video URL" \
--i="Custom player overlay opacity" \
--i="Disable player popup panels" \
--i="Disable resuming Shorts on startup" \
--i="Disable suggested video end screen" \
--i="Disable zoom haptics" \
--i="Downloads" \
--i="GmsCore support" \
--i="Hide Shorts components" \
--i="Hide ads" \
--i="Hide cast button" \
--i="Hide layout components" \
--i="Hide player buttons" \
--i="Miniplayer" \
--i="Open links externally" \
--i="Player flyout menu" \
--i="Remember video quality" \
--i="Remove background playback restrictions" \
--i="Remove player controls background" \
--i="SponsorBlock" \
--i="Spoof video streams" \
--i="Swipe controls" \
--i="Theme" \
--i="Video ads" \
+--exclusive \
+-e="Announcements" \
+-e="Bypass URL redirects" \
+-e="Bypass image region restrictions" \
+-e="Change header" \
+-Oheader="revanced*" \
+-e="Copy video URL" \
+-e="Custom player overlay opacity" \
+-e="Disable player popup panels" \
+-e="Disable resuming Shorts on startup" \
+-e="Disable suggested video end screen" \
+-e="Disable zoom haptics" \
+-e="Downloads" \
+-e="GmsCore support" \
+-e="Hide Shorts components" \
+-e="Hide ads" \
+-e="Hide endscreen cards" \
+-e="Hide layout components" \
+-e="Hide player flyout menu items" \
+-e="Hide player overlay buttons" \
+-e="Hide video action buttons" \
+-e="Miniplayer" \
+-e="Open links externally" \
+-e="Remember video quality" \
+-e="Remove background playback restrictions" \
+-e="Remove player controls background" \
+-e="SponsorBlock" \
+-e="Spoof video streams" \
+-e="Swipe controls" \
+-e="Theme" \
+-OdarkThemeBackgroundColor="@android:color/system_neutral1_900" \
+-OlightThemeBackgroundColor="@android:color/system_neutral1_50" \
+-e="Video ads" \
 ~/storage/downloads/*youtube_*.apk
 
 echo "Move Apk to Internal Storage"
 mv *youtube_*.apk ~/storage/shared/
-
-echo "delete options"
-rm *.json
 
 echo "Finished 😀"
