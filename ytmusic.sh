@@ -18,7 +18,6 @@ java -jar revanced/revanced-cli*.jar patch \
 --purge \
 --force \
 --exclusive \
--e="Bypass certificate checks" \
 -e="Enable exclusive audio playback" \
 -e="GmsCore support" \
 -e="Hide 'Get Music Premium' label" \
@@ -26,6 +25,7 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Permanent repeat" \
 -e="Remove background playback restrictions" \
 -e="Remove upgrade button" \
+-e="Spoof video streams" \
 ~/storage/downloads/*youtube.music*.apk
 
 echo "Move Apk to Internal Storage"

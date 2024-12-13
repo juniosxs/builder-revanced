@@ -31,7 +31,6 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Disable zoom haptics" \
 -e="Downloads" \
 -e="GmsCore support" \
--e="Hide Shorts components" \
 -e="Hide ads" \
 -e="Hide endscreen cards" \
 -e="Hide layout components" \
