@@ -21,11 +21,12 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Enable exclusive audio playback" \
 -e="GmsCore support" \
 -e="Hide 'Get Music Premium' label" \
+-e="Hide category bar" \
 -e="Hide music video ads" \
 -e="Permanent repeat" \
 -e="Remove background playback restrictions" \
 -e="Remove upgrade button" \
--e="Spoof video streams" \
+-e="Spoof client" \
 ~/storage/downloads/*youtube.music*.apk
 
 echo "Move Apk to Internal Storage"
