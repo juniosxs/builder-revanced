@@ -21,7 +21,6 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Enable exclusive audio playback" \
 -e="GmsCore support" \
 -e="Hide 'Get Music Premium' label" \
--e="Hide category bar" \
 -e="Hide music video ads" \
 -e="Permanent repeat" \
 -e="Remove background playback restrictions" \
