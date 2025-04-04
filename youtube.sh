@@ -41,7 +41,6 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Open links externally" \
 -e="Remember video quality" \
 -e="Remove background playback restrictions" \
--e="Remove player controls background" \
 -e="SponsorBlock" \
 -e="Spoof video streams" \
 -e="Swipe controls" \
