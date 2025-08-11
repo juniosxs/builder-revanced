@@ -4,8 +4,8 @@
 echo "force delete resource cache"
 rm -rf *cache* *.json
 
-echo "Updating ReVanced Dependencies"
-sh update.sh
+#echo "Updating ReVanced Dependencies"
+#sh update.sh
 
 echo "Building YouTube Music ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
@@ -17,16 +17,7 @@ java -jar revanced/revanced-cli*.jar patch \
 --keystore-password revanced \
 --purge \
 --force \
---exclusive \
--e="Enable exclusive audio playback" \
--e="GmsCore support" \
--e="Hide 'Get Music Premium' label" \
--e="Hide music video ads" \
--e="Permanent repeat" \
--e="Remove background playback restrictions" \
--e="Remove upgrade button" \
--e="Spoof client" \
-~/storage/downloads/*youtube.music*.apk
+~/storage/shared/Download/*youtube.music*.apk
 
 echo "Move Apk to Internal Storage"
 mv *youtube.music*.apk ~/storage/shared/

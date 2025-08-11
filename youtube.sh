@@ -4,8 +4,8 @@
 echo "force delete resource cache"
 rm -rf *cache* *.json
 
-echo "Updating ReVanced Dependencies"
-sh update.sh
+#echo "Updating ReVanced Dependencies"
+#sh update.sh
 
 echo "Building YouTube ReVanced"
 java -jar revanced/revanced-cli*.jar patch \
@@ -21,25 +21,21 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Announcements" \
 -e="Bypass URL redirects" \
 -e="Bypass image region restrictions" \
+-e="Copy video URL" \
 -e="Change header" \
 -Oheader="revanced*" \
--e="Copy video URL" \
 -e="Custom player overlay opacity" \
 -e="Disable player popup panels" \
 -e="Disable resuming Shorts on startup" \
--e="Disable suggested video end screen" \
--e="Disable zoom haptics" \
 -e="Downloads" \
 -e="GmsCore support" \
 -e="Hide ads" \
--e="Hide endscreen cards" \
 -e="Hide layout components" \
 -e="Hide player flyout menu items" \
 -e="Hide player overlay buttons" \
 -e="Hide video action buttons" \
 -e="Miniplayer" \
 -e="Open links externally" \
--e="Remember video quality" \
 -e="Remove background playback restrictions" \
 -e="SponsorBlock" \
 -e="Spoof video streams" \
@@ -47,6 +43,7 @@ java -jar revanced/revanced-cli*.jar patch \
 -e="Theme" \
 -OdarkThemeBackgroundColor="@android:color/system_neutral1_900" \
 -OlightThemeBackgroundColor="@android:color/system_neutral1_50" \
+-e="Video quality" \
 -e="Video ads" \
 ~/storage/downloads/*youtube_*.apk
 
